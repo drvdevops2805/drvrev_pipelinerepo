@@ -9,7 +9,7 @@ pipeline {
    }
 
    stages {
-      stage('Code Checkout') {
+      stage('Code Checkout Drv') {
          steps {
             // Get some code from a GitHub repository
             git 'https://github.com/sidvijay18/tomcat_pipeline.git'   
@@ -18,7 +18,7 @@ pipeline {
       }
       
       
-      stage('Code Testing') {
+      stage('Code Testing Drv') {
          steps {
            
             // To run Maven on a Windows agent, use
@@ -26,7 +26,7 @@ pipeline {
          }
       }
          
-          stage('Code Build') {
+          stage('Code Build Drv') {
          steps {
            
             // To run Maven on a Windows agent, use
@@ -35,7 +35,7 @@ pipeline {
 
       }
       
-      stage('Code Deploy') {
+      stage('Code Deploy Drv') {
          steps {
         
             // To run Maven on a Windows agent, use
