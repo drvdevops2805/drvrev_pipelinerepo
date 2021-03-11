@@ -12,7 +12,7 @@ pipeline {
       stage('Code Checkout Drv') {
          steps {
             // Get some code from a GitHub repository
-            git 'https://github.com/sidvijay18/tomcat_pipeline.git'   
+            git 'https://github.com/drvdevops2805/drvrev_pipelinerepo.git'   
          }
 
       }
